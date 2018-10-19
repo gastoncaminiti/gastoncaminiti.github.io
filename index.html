@@ -1,1 +1,34 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caminiti, Gastón</title>
+		<!-- Add this to <head> -->
+	<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css"/>
+	<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@2.0.0-rc.11/dist/bootstrap-vue.css"/>
+
+	<!-- Add this after vue.js -->
+	<script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/bootstrap-vue@2.0.0-rc.11/dist/bootstrap-vue.js"></script>
+
+	<meta charset="utf-8">
+</head>
+<body>
+<div id="app">
+	 <b-row>
+	 	<b-col sm="1">----</b-col>
+        <b-col sm="5"><center>En Construcción</center></b-col>
+        <b-col sm="5"><center>{{message}}</center></b-col>
+        <b-col sm="1">----</b-col>
+    </b-row>
+</div>
+<script type="text/javascript">
+	var app = new Vue({
+	  el: '#app',
+	  data: {
+	    message: 'Gastón Caminiti'
+	  }
+	})
+</script>
+</body>
+</html>
