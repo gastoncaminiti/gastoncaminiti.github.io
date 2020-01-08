@@ -2,31 +2,129 @@
 <html>
 <head>
 	<title>Caminiti, Gastón</title>
-		<!-- Add this to <head> -->
-	<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap@4.1.1/dist/css/bootstrap.min.css"/>
-	<link type="text/css" rel="stylesheet" href="https://unpkg.com/bootstrap-vue@2.0.0-rc.11/dist/bootstrap-vue.css"/>
-
-	<!-- Add this after vue.js -->
-	<script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
-	<script src="https://unpkg.com/vue/dist/vue.js"></script>
-	<script src="https://unpkg.com/bootstrap-vue@2.0.0-rc.11/dist/bootstrap-vue.js"></script>
-
+	<!-- Add this to <head> -->
+	<link type="text/css" rel="stylesheet" href="css/min/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="css/min/bootstrap-vue.min.css"/>
 	<meta charset="utf-8">
 </head>
 <body>
 <div id="app">
-	 <b-row>
-	 	<b-col sm="1">----</b-col>
-        <b-col sm="5"><center>En Construcción</center></b-col>
-        <b-col sm="5"><center>{{message}}</center></b-col>
-        <b-col sm="1">----</b-col>
-    </b-row>
+	<b-container fluid>
+		<b-row>
+			<b-col>
+			<b-jumbotron header="BootstrapVue" lead="Bootstrap v4 Components for Vue.js 2">
+				<p>For more information visit website</p>
+				<b-button variant="primary" href="#">More Info</b-button>
+			</b-jumbotron>
+			<b-col>
+		</b-row>
+		<b-row class="text-center">
+			<b-col cols="4">1 of 3</b-col>
+			<b-col cols="4">Variable width content</b-col>
+			<b-col cols="4">3 of 3</b-col>
+		</b-row>
+		<b-row>
+			<b-col>
+			<b-card-group columns>
+				<b-card
+				  title="Card title that wraps to a new line"
+				  img-src="https://placekitten.com/g/400/450"
+				  img-alt="Image"
+				  img-top
+				>
+				  <b-card-text>
+					This is a wider card with supporting text below as a natural lead-in to additional content.
+					This content is a little bit longer.
+				  </b-card-text>
+				</b-card>
+			
+				<b-card header="Quote">
+				  <blockquote class="blockquote mb-0">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					<footer class="blockquote-footer">
+					  Someone famous in <cite title="Source Title">Source Title</cite>
+					</footer>
+				  </blockquote>
+				</b-card>
+			
+				<b-card title="Title" img-src="https://placekitten.com/500/350" img-alt="Image" img-top>
+				  <b-card-text>
+					This card has supporting text below as a natural lead-in to additional content.
+				  </b-card-text>
+				  <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+				</b-card>
+			
+				<b-card bg-variant="primary" text-variant="white">
+				  <blockquote class="card-blockquote">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+					<footer>
+					  <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
+					</footer>
+				  </blockquote>
+				</b-card>
+			
+				<b-card>
+				  <b-card-title>Title</b-card-title>
+				  <b-card-text>
+					This card has supporting text below as a natural lead-in to additional content.
+				  </b-card-text>
+				  <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+				</b-card>
+			
+				<b-card img-src="https://picsum.photos/400/400/?image=41" img-alt="Image" overlay></b-card>
+			
+				<b-card img-src="https://picsum.photos/400/200/?image=41" img-alt="Image" img-top>
+				  <b-card-text>
+					This is a wider card with supporting text below as a natural lead-in to additional content.
+					This card has even longer content than the first.
+				  </b-card-text>
+				  <template v-slot:footer>
+					<small class="text-muted">Footer Text</small>
+				  </template>
+				</b-card>
+			  </b-card-group>
+			</b-col>
+		</b-row>
+		<b-row class="text-center">
+			<b-col xl="11" lg="11" md="12" sm="12" cols="12">
+				<b-tabs content-class="mt-3" justified>
+					<b-tab title="First" active><p>I'm the first tab</p></b-tab>
+					<b-tab title="Second"><p>I'm the second tab</p></b-tab>
+					<b-tab title="Very, very long title"><p>I'm the tab with the very, very long title</p></b-tab>
+				</b-tabs>
+			</b-col>
+			<b-col xl="1" lg="1" md="12" sm="12" cols="12">
+				<b-list-group class="d-flex justify-content-between align-items-center">
+					<b-list-group-item>
+						<b-img v-bind="mainProps" rounded="top" alt="Top-rounded image"></b-img>
+					</b-list-group-item>
+					<b-list-group-item>
+						<b-img v-bind="mainProps" rounded="right" alt="Right-rounded image"></b-img>
+					</b-list-group-item>
+					<b-list-group-item>
+						<b-img v-bind="mainProps" rounded="bottom" alt="Bottom-rounded image"></b-img>
+					</b-list-group-item>
+				</b-list-group>	
+			</b-col>
+		</b-row>
+		<b-row class="text-center" align-h="start">
+			<b-col cols="4">1 of 3</b-col>
+			<b-col cols="4">Variable width content</b-col>
+			<b-col cols="4">3 of 3</b-col>
+		</b-row>
+	</b-container>
 </div>
+<script src="js/min/jquery.min.js"></script>
+<script src="js/min/bootstrap.bundle.min.js"></script>
+<script src="js/min/vue.min.js"></script>
+<script src="js/min/portal-vue.min.js"></script>
+<script src="js/min/bootstrap-vue.min.js"></script>
 <script type="text/javascript">
 	var app = new Vue({
 	  el: '#app',
 	  data: {
-	    message: 'Gastón Caminiti'
+		message: 'Gastón Caminiti',
+		mainProps: { blank: true, blankColor: '#777', width: 75, height: 75, class: 'm1' }
 	  }
 	})
 </script>
