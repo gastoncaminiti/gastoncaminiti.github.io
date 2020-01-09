@@ -9,19 +9,39 @@
 </head>
 <body>
 <div id="app">
+	<b-navbar toggleable="lg" type="dark" variant="dark">
+		<b-col md="1" offset-md="11">
+			<b-form-select v-model="$i18n.locale" :options="langs"></b-form-select>
+		</b-col>
+	</b-navbar>
 	<b-container fluid>
 		<b-row>
-			<b-col>
-			<b-jumbotron header="BootstrapVue" lead="Bootstrap v4 Components for Vue.js 2">
-				<p>For more information visit website</p>
-				<b-button variant="primary" href="#">More Info</b-button>
-			</b-jumbotron>
-			<b-col>
+			<b-col md="6" offset-md="3">
+							<b-row align-v="center">
+								<b-col>
+									<b-img src="img/site/avatar.png" alt="avatar image" fluid ></b-img>
+								</b-col>
+								<b-col class="text-center">
+									<h2>Gastón Caminiti</h2>
+									<h5>{{ $t("message.title") }}</h5>
+								</b-col>
+
+							</b-row>	
+						</b-col>
+						</b-col>
+					
+			</b-col>
 		</b-row>
-		<b-row class="text-center">
-			<b-col cols="4">1 of 3</b-col>
-			<b-col cols="4">Variable width content</b-col>
-			<b-col cols="4">3 of 3</b-col>
+		<b-row class="text-center bg-secondary">
+			<b-col cols="4">
+				a
+			</b-col>
+			<b-col cols="4">
+				b
+			</b-col>
+			<b-col cols="4">
+				c
+			</b-col>
 		</b-row>
 		<b-row>
 			<b-col>
@@ -119,14 +139,7 @@
 <script src="js/min/vue.min.js"></script>
 <script src="js/min/portal-vue.min.js"></script>
 <script src="js/min/bootstrap-vue.min.js"></script>
-<script type="text/javascript">
-	var app = new Vue({
-	  el: '#app',
-	  data: {
-		message: 'Gastón Caminiti',
-		mainProps: { blank: true, blankColor: '#777', width: 75, height: 75, class: 'm1' }
-	  }
-	})
-</script>
+<script src="js/vue-i18n.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
