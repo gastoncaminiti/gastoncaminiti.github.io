@@ -24,6 +24,8 @@ new Vue({
     data: {
       message: 'Gastón Caminiti',
       langs: ['es', 'en'], 
+      hover_card1: false,
+      hover_card2: false,
       mainProps: { blank: true, blankColor: '#777', width: 75, height: 75, class: 'm1' }
     }
 })

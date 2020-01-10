@@ -32,30 +32,73 @@
 					
 			</b-col>
 		</b-row>
-		<b-row class="text-center bg-secondary">
+		<b-row class="text-center bg-dark">
 			<b-col cols="4">
-				a
+				<b-card bg-variant="light" border-variant="dark" align="center" class="mt-3 mb-3">
+					<b-card-text>
+						<b-row>
+							<b-col  md="8" >
+								<h6>{{ $t("message.title") }}</h6>
+								<h6>{{ $t("message.title") }}</h6>
+							</b-col>
+							<b-col  md="4" >
+								<b-img center src="img/site/chatora.png" alt="avatar image"  rounded width="105" height="65" ></b-img>
+							</b-col>
+						</b-row>
+					</b-card-text>
+				  </b-card>
+				</b-card-group>
 			</b-col>
 			<b-col cols="4">
-				b
+				<b-card bg-variant="light" border-variant="dark" align="center" class="mt-3 mb-3">
+					<b-card-text>
+						<b-row>
+							<b-col  md="8" >
+								<h6>{{ $t("message.title") }}</h6>
+								<h6>{{ $t("message.title") }}</h6>
+							</b-col>
+							<b-col  md="4" >
+								<b-img center src="img/site/unam.png" alt="avatar image"  rounded width="150" height="65" ></b-img>
+							</b-col>
+						</b-row>
+					</b-card-text>
+				  </b-card>
+				</b-card-group>
 			</b-col>
 			<b-col cols="4">
-				c
+				<b-card bg-variant="light" border-variant="dark" align="center" class="mt-3 mb-3">
+					<b-card-text>
+						<b-row>
+							<b-col  md="8" >
+								<h6>{{ $t("message.title") }}</h6>
+								<h6>{{ $t("message.title") }}</h6>
+							</b-col>
+							<b-col  md="4" >
+								<b-img center src="img/site/unl.png" alt="avatar image"  rounded width="65" height="65" ></b-img>
+							</b-col>
+						</b-row>
+					</b-card-text>
+				  </b-card>
+				</b-card-group>
 			</b-col>
 		</b-row>
 		<b-row>
 			<b-col>
+			<h1  class="mt-3 mb-3" >Portfolio</h1>
 			<b-card-group columns>
 				<b-card
-				  title="Card title that wraps to a new line"
+				  overlay
 				  img-src="https://placekitten.com/g/400/450"
 				  img-alt="Image"
 				  img-top
-				>
-				  <b-card-text>
-					This is a wider card with supporting text below as a natural lead-in to additional content.
-					This content is a little bit longer.
-				  </b-card-text>
+				  @mouseover="hover_card1  = true"
+				  @mouseleave="hover_card1 = false">
+				
+				  <b-row v-if="hover_card1" class="text-center bg-light mt-0">
+					<b-col >
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+				   </b-col>
+				   </b-row>
 				</b-card>
 			
 				<b-card header="Quote">
@@ -67,11 +110,17 @@
 				  </blockquote>
 				</b-card>
 			
-				<b-card title="Title" img-src="https://placekitten.com/500/350" img-alt="Image" img-top>
-				  <b-card-text>
-					This card has supporting text below as a natural lead-in to additional content.
-				  </b-card-text>
-				  <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+				<b-card overlay title="Title" img-src="https://placekitten.com/500/350" img-alt="Image" img-top
+				@mouseover="hover_card2  = true"
+				  @mouseleave="hover_card2 = false"
+				>
+				 
+				<b-row v-if="hover_card2" class="text-center bg-light mt-0">
+					<b-col >
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+				   </b-col>
+				   </b-row>
+				</b-card>
 				</b-card>
 			
 				<b-card bg-variant="primary" text-variant="white">
