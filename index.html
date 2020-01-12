@@ -5,6 +5,7 @@
 	<!-- Add this to <head> -->
 	<link type="text/css" rel="stylesheet" href="css/min/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="css/min/bootstrap-vue.min.css"/>
+	<link type="text/css" rel="stylesheet" href="css/custom.css">
 	<meta charset="utf-8">
 </head>
 <body>
@@ -29,7 +30,6 @@
 							</b-row>	
 						</b-col>
 						</b-col>
-					
 			</b-col>
 		</b-row>
 		<b-row class="text-center bg-dark">
@@ -86,94 +86,171 @@
 			<b-col>
 			<h1  class="mt-3 mb-3" >Portfolio</h1>
 			<b-card-group columns>
+				<!--PRIMERA COLUMNA-->
+				<!--CARD 1-->
 				<b-card
 				  overlay
-				  img-src="https://placekitten.com/g/400/450"
+				  img-src="img/site/portfolio/card1.png"
 				  img-alt="Image"
 				  img-top
-				  @mouseover="hover_card1  = true"
-				  @mouseleave="hover_card1 = false">
-				
-				  <b-row v-if="hover_card1" class="text-center bg-light mt-0">
-					<b-col >
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+				  @mouseover="show_card(0)"
+				  @mouseleave="hide_card(0)">
+				  <b-row v-show="fcards[0]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card1") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card1") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card1") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
-			
-				<b-card header="Quote">
-				  <blockquote class="blockquote mb-0">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-					<footer class="blockquote-footer">
-					  Someone famous in <cite title="Source Title">Source Title</cite>
-					</footer>
-				  </blockquote>
-				</b-card>
-			
-				<b-card overlay title="Title" img-src="https://placekitten.com/500/350" img-alt="Image" img-top
-				@mouseover="hover_card2  = true"
-				  @mouseleave="hover_card2 = false"
-				>
-				 
-				<b-row v-if="hover_card2" class="text-center bg-light mt-0">
-					<b-col >
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+				<!--CARD 4-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card4.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(3)"
+				  @mouseleave="hide_card(3)">
+				  <b-row v-if="fcards[3]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card4") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card4") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card4") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
+				<!--CARD 6-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card6.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(5)"
+				  @mouseleave="hide_card(5)">
+				  <b-row v-if="fcards[5]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card6") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card6") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card6") }}</a></p>
+				   </b-col>
+				   </b-row>
 				</b-card>
-			
-				<b-card bg-variant="primary" text-variant="white">
-				  <blockquote class="card-blockquote">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-					<footer>
-					  <small>Someone famous in <cite title="Source Title">Source Title</cite></small>
-					</footer>
-				  </blockquote>
+				<!--SEGUNDA COLUMNA-->
+				<!--CARD 2-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card2.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(1)"
+				  @mouseleave="hide_card(1)">
+				  <b-row v-if="fcards[1]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card2") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card2") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card2") }}</a></p>
+				   </b-col>
+				   </b-row>
 				</b-card>
-			
-				<b-card>
-				  <b-card-title>Title</b-card-title>
-				  <b-card-text>
-					This card has supporting text below as a natural lead-in to additional content.
-				  </b-card-text>
-				  <b-card-text class="small text-muted">Last updated 3 mins ago</b-card-text>
+				<!--CARD 3-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card3.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(2)"
+				  @mouseleave="hide_card(2)">
+				  <b-row v-if="fcards[2]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card3") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card3") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card3") }}</a></p>
+				   </b-col>
+				   </b-row>
 				</b-card>
-			
-				<b-card img-src="https://picsum.photos/400/400/?image=41" img-alt="Image" overlay></b-card>
-			
-				<b-card img-src="https://picsum.photos/400/200/?image=41" img-alt="Image" img-top>
-				  <b-card-text>
-					This is a wider card with supporting text below as a natural lead-in to additional content.
-					This card has even longer content than the first.
-				  </b-card-text>
-				  <template v-slot:footer>
-					<small class="text-muted">Footer Text</small>
-				  </template>
+				<!--CARD 5-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card3.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(4)"
+				  @mouseleave="hide_card(4)">
+				  <b-row v-if="fcards[4]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card5") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card5") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card5") }}</a></p>
+				   </b-col>
+				   </b-row>
+				</b-card>
+				<!--CARD 7-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card3.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(6)"
+				  @mouseleave="hide_card(6)">
+				  <b-row v-if="fcards[6]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card7") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card7") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card7") }}</a></p>
+				   </b-col>
+				   </b-row>
+				</b-card>
+				<!--CARD 8-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card3.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(7)"
+				  @mouseleave="hide_card(7)">
+				  <b-row v-if="fcards[7]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card8") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card8") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card8") }}</a></p>
+				   </b-col>
+				   </b-row>
+				</b-card>
+				<!--CARD 9-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card9.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(8)"
+				  @mouseleave="hide_card(8)">
+				  <b-row v-if="fcards[8]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("message.portfolio-title-card9") }}</h4>
+						<h6 class="text-light "> {{ $t("message.portfolio-description-card9") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card9") }}</a></p>
+				   </b-col>
+				   </b-row>
 				</b-card>
 			  </b-card-group>
 			</b-col>
 		</b-row>
 		<b-row class="text-center">
-			<b-col xl="11" lg="11" md="12" sm="12" cols="12">
-				<b-tabs content-class="mt-3" justified>
+			<b-col xl="12" lg="12" md="12" sm="12" cols="12">
+				<b-tabs ontent-class="mt-3" justified>
 					<b-tab title="First" active><p>I'm the first tab</p></b-tab>
 					<b-tab title="Second"><p>I'm the second tab</p></b-tab>
 					<b-tab title="Very, very long title"><p>I'm the tab with the very, very long title</p></b-tab>
 				</b-tabs>
-			</b-col>
-			<b-col xl="1" lg="1" md="12" sm="12" cols="12">
-				<b-list-group class="d-flex justify-content-between align-items-center">
-					<b-list-group-item>
-						<b-img v-bind="mainProps" rounded="top" alt="Top-rounded image"></b-img>
-					</b-list-group-item>
-					<b-list-group-item>
-						<b-img v-bind="mainProps" rounded="right" alt="Right-rounded image"></b-img>
-					</b-list-group-item>
-					<b-list-group-item>
-						<b-img v-bind="mainProps" rounded="bottom" alt="Bottom-rounded image"></b-img>
-					</b-list-group-item>
-				</b-list-group>	
 			</b-col>
 		</b-row>
 		<b-row class="text-center" align-h="start">

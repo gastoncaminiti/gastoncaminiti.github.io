@@ -24,8 +24,16 @@ new Vue({
     data: {
       message: 'Gastón Caminiti',
       langs: ['es', 'en'], 
-      hover_card1: false,
-      hover_card2: false,
+      fcards: [false, false, false, false, false, false, false, false, false],
       mainProps: { blank: true, blankColor: '#777', width: 75, height: 75, class: 'm1' }
+    },
+    methods: {
+      show_card: function(index){
+        this.$set(this.fcards, index, true)
+        console.log(this.fcards);
+      },
+      hide_card: function(index){
+        this.$set(this.fcards, index, false)
+      }
     }
 })
