@@ -29,7 +29,7 @@
 								</b-col>
 								<b-col  xl="6" lg="6" md="12" sm="12" cols="12" class="text-center">
 									<h2>Gastón Caminiti</h2>
-									<h5>{{ $t("message.title") }}</h5>
+									<h5>{{ $t("data.title") }}</h5>
 									<b-row  align-h="center">
 									<b-col  xl="6" lg="6" md="12" sm="12" cols="12">
 										<b-img  src="img/site/in.png" alt="avatar image"  rounded width="50" height="50" ></b-img>
@@ -50,8 +50,8 @@
 					<b-card-text>
 						<b-row>
 							<b-col  md="8" >
-								<h6>{{ $t("message.title") }}</h6>
-								<h6>{{ $t("message.title") }}</h6>
+								<h6>{{ $t("data.header.card1.title") }} {{ $t("data.articles.in") }}</h6> 
+								<h6>{{ $t("data.header.card1.organization") }}</h6>
 							</b-col>
 							<b-col  md="4" >
 								<b-img center src="img/site/chatora.png" alt="avatar image"  rounded width="105" height="65" ></b-img>
@@ -66,8 +66,8 @@
 					<b-card-text>
 						<b-row>
 							<b-col  md="8" >
-								<h6>{{ $t("message.title") }}</h6>
-								<h6>{{ $t("message.title") }}</h6>
+								<h6>{{ $t("data.header.card2.title") }} {{ $t("data.articles.of") }}</h6> 
+								<h6>{{ $t("data.header.card2.organization") }}</h6>
 							</b-col>
 							<b-col  md="4" >
 								<b-img center src="img/site/unam.png" alt="avatar image"  rounded width="150" height="65" ></b-img>
@@ -82,8 +82,8 @@
 					<b-card-text>
 						<b-row>
 							<b-col  md="8" >
-								<h6>{{ $t("message.title") }}</h6>
-								<h6>{{ $t("message.title") }}</h6>
+								<h6>{{ $t("data.header.card3.title") }} {{ $t("data.articles.of") }}</h6> 
+								<h6>{{ $t("data.header.card3.organization") }}</h6>
 							</b-col>
 							<b-col  md="4" >
 								<b-img center src="img/site/unl.png" alt="avatar image"  rounded width="65" height="65" ></b-img>
@@ -109,10 +109,14 @@
 				  @mouseleave="hide_card(0)">
 				  <b-row v-show="fcards[0]" class="opacity-background mt-0">
 					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card1") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card1") }}</h6>
+						<h4 class="text-warning">{{ $t("data.portfolio.card1.title") }}</h4>
+						<h6 class="text-light text-center mb-3"> {{ $t("data.portfolio.card1.description") }}</h6>
+						<div>
+							<h6><b-badge variant="light">GODOT ENGINE</b-badge>
+							<b-badge variant="light">GDSCRIPT</b-badge> <b-badge variant="light">STRATEGY</b-badge> <b-badge variant="light">CARD GAME</b-badge></h6>
+						</div>
 						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card1") }}</a></p>
+						<p class="text-center"><a class="btn btn-outline-warning" href="https://gastoncaminiti.itch.io/verdandi" role="button" target="_blank">{{ $t("data.interface.download") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
@@ -126,27 +130,31 @@
 				  @mouseleave="hide_card(3)">
 				  <b-row v-if="fcards[3]" class="opacity-background mt-0">
 					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card4") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card4") }}</h6>
+						<h4 class="text-warning">{{ $t("data.portfolio.card2.title") }}</h4>
+						<h6 class="text-light text-center mb-3"> {{ $t("data.portfolio.card2.description") }}</h6>
+						<div>
+							<h6><b-badge variant="light">HAXEFLIXEL</b-badge>
+							<b-badge variant="light">HAXE</b-badge> <b-badge variant="light">2D PLATFORM</b-badge> <b-badge variant="light">PUZZLE</b-badge></h6>
+						</div>
 						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card4") }}</a></p>
+						<p class="text-center"><a class="btn btn-outline-warning" href="https://gastoncaminiti.itch.io/verdandi" role="button" target="_blank">{{ $t("data.interface.download") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
-				<!--CARD 6-->
+				<!--CARD 7-->
 				<b-card
 				  overlay
-				  img-src="img/site/portfolio/card6.png"
+				  img-src="img/site/portfolio/card7.png"
 				  img-alt="Image"
 				  img-top
-				  @mouseover="show_card(5)"
-				  @mouseleave="hide_card(5)">
-				  <b-row v-if="fcards[5]" class="opacity-background mt-0">
+				  @mouseover="show_card(6)"
+				  @mouseleave="hide_card(6)">
+				  <b-row v-if="fcards[6]" class="opacity-background mt-0">
 					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card6") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card6") }}</h6>
+						<h4 class="text-warning">{{ $t("data.portfolio-title-card7") }}</h4>
+						<h6 class="text-light "> {{ $t("data.portfolio-description-card7") }}</h6>
 						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card6") }}</a></p>
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("data.portfolio-link-card7") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
@@ -161,27 +169,10 @@
 				  @mouseleave="hide_card(1)">
 				  <b-row v-if="fcards[1]" class="opacity-background mt-0">
 					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card2") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card2") }}</h6>
+						<h4 class="text-warning">{{ $t("data.portfolio-title-card2") }}</h4>
+						<h6 class="text-light "> {{ $t("data.portfolio-description-card2") }}</h6>
 						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card2") }}</a></p>
-				   </b-col>
-				   </b-row>
-				</b-card>
-				<!--CARD 3-->
-				<b-card
-				  overlay
-				  img-src="img/site/portfolio/card3.png"
-				  img-alt="Image"
-				  img-top
-				  @mouseover="show_card(2)"
-				  @mouseleave="hide_card(2)">
-				  <b-row v-if="fcards[2]" class="opacity-background mt-0">
-					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card3") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card3") }}</h6>
-						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card3") }}</a></p>
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("data.portfolio-link-card2") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
@@ -195,44 +186,62 @@
 				  @mouseleave="hide_card(4)">
 				  <b-row v-if="fcards[4]" class="opacity-background mt-0">
 					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card5") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card5") }}</h6>
+						<h4 class="text-warning">{{ $t("data.portfolio-title-card5") }}</h4>
+						<h6 class="text-light "> {{ $t("data.portfolio-description-card5") }}</h6>
 						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card5") }}</a></p>
-				   </b-col>
-				   </b-row>
-				</b-card>
-				<!--CARD 7-->
-				<b-card
-				  overlay
-				  img-src="img/site/portfolio/card3.png"
-				  img-alt="Image"
-				  img-top
-				  @mouseover="show_card(6)"
-				  @mouseleave="hide_card(6)">
-				  <b-row v-if="fcards[6]" class="opacity-background mt-0">
-					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card7") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card7") }}</h6>
-						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card7") }}</a></p>
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("data.portfolio-link-card5") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
 				<!--CARD 8-->
 				<b-card
 				  overlay
-				  img-src="img/site/portfolio/card3.png"
+				  img-src="img/site/portfolio/card8.png"
 				  img-alt="Image"
 				  img-top
 				  @mouseover="show_card(7)"
 				  @mouseleave="hide_card(7)">
 				  <b-row v-if="fcards[7]" class="opacity-background mt-0">
 					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card8") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card8") }}</h6>
+						<h4 class="text-warning">{{ $t("data.portfolio-title-card8") }}</h4>
+						<h6 class="text-light "> {{ $t("data.portfolio-description-card8") }}</h6>
 						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card8") }}</a></p>
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("data.portfolio-link-card8") }}</a></p>
+				   </b-col>
+				   </b-row>
+				</b-card>
+				<!--TERCERA COLUMNA-->
+				<!--CARD 3-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card3.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(2)"
+				  @mouseleave="hide_card(2)">
+				  <b-row v-if="fcards[2]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("data.portfolio-title-card3") }}</h4>
+						<h6 class="text-light "> {{ $t("data.portfolio-description-card3") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("data.portfolio-link-card3") }}</a></p>
+				   </b-col>
+				   </b-row>
+				</b-card>
+				<!--CARD 6-->
+				<b-card
+				  overlay
+				  img-src="img/site/portfolio/card6.png"
+				  img-alt="Image"
+				  img-top
+				  @mouseover="show_card(5)"
+				  @mouseleave="hide_card(5)">
+				  <b-row v-if="fcards[5]" class="opacity-background mt-0">
+					<b-col class="mt-2">
+						<h4 class="text-warning">{{ $t("data.portfolio-title-card6") }}</h4>
+						<h6 class="text-light "> {{ $t("data.portfolio-description-card6") }}</h6>
+						<hr class="my-2">
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("data.portfolio-link-card6") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
@@ -246,10 +255,10 @@
 				  @mouseleave="hide_card(8)">
 				  <b-row v-if="fcards[8]" class="opacity-background mt-0">
 					<b-col class="mt-2">
-						<h4 class="text-warning">{{ $t("message.portfolio-title-card9") }}</h4>
-						<h6 class="text-light "> {{ $t("message.portfolio-description-card9") }}</h6>
+						<h4 class="text-warning">{{ $t("data.portfolio-title-card9") }}</h4>
+						<h6 class="text-light "> {{ $t("data.portfolio-description-card9") }}</h6>
 						<hr class="my-2">
-						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("message.portfolio-link-card9") }}</a></p>
+						<p class="text-center"><a class="btn btn-outline-warning" href="#" role="button">{{ $t("data.portfolio-link-card9") }}</a></p>
 				   </b-col>
 				   </b-row>
 				</b-card>
