@@ -1,7 +1,6 @@
 const messages = {
   en: {
     data: {
-      hello: 'hello world',
       title: 'Professor & Game Designer',
       portfolio: 'Portfolio',
       header: {
@@ -24,8 +23,36 @@ const messages = {
           description: 'Verdandi is an experimental 2D strategy video game, where we assume the role of a Valkyrie, who using the power of the Viking runes can manipulate the events of combat.',
         },
         card2:{
+          title: 'Zamna Atlante',
+          description: 'Open source project destinate to learn development for 2D platform games in Godot 3.',
+        },
+        card3:{
+          title: 'Sunset Revenge',
+          description: 'Sunset Revenge is a Fangame of Sunset Riders. API Kongregate integration.',
+        },
+        card4:{
           title: 'Rabbuble',
           description: 'Rabbuble is a 2D platform game, travel between bubbles and pick up the carrots but watch out for obstacles.',
+        },
+        card5:{
+          title: 'Bulletman',
+          description: 'Shoot bulletman and get the star. This project simulate ragdoll physics in 2D world.',
+        },
+        card6:{
+          title: 'Sumtrain',
+          description: 'Make sums to advance the train. If you miss, a wagon  disappears.',
+        },
+        card7:{
+          title: 'Total Tank',
+          description: 'Total Tank is an arcade game inspirate in Battle City. Defeate your enemies before lose your armor.',
+        },
+        card8:{
+          title: 'West Saloon',
+          description: 'Defeat the bandits and save dogs. Duck Hunt  with cowboy style.',
+        },
+        card9:{
+          title: 'SAB "Mi Beca" ',
+          description: 'Development and maintenance of the system "Mi Beca" used by the Faculty of Chemical and Natural Sciences of the National University of Misiones.',
         }
       },
       articles: {
@@ -34,13 +61,13 @@ const messages = {
       },
       interface: {
         download: "Download",
+        show: "Show"
       }
 
     }
   },
   es: {
     data: {
-      hello: 'こんにちは、世界',
       title: 'Profesor y diseñador de videojuegos',
       portfolio: 'Portfolio',
       header: {
@@ -63,8 +90,36 @@ const messages = {
           description: 'Verdandi es un videojuego experimental de estrategia 2D, donde asumimos el rol de una valquiria, que empleando el poder de las runas vikingas puede manipular los eventos del combate.',
         },
         card2:{
+          title: 'Zamna Atlante',
+          description: 'Proyecto de código abierto destinado a aprender desarrollo de juegos de plataforma 2D en Godot 3.',
+        },
+        card3:{
+          title: 'Sunset Revenge',
+          description: 'Sunset Revenge es un Fangame de Sunset Riders. Integración de API Kongregate.s',
+        },
+        card4:{
           title: 'Rabbuble',
           description: 'Rabbuble es un juego de plataformas en 2D, viaja entre burbujas y recoge las zanahorias pero ten cuidado con los obstáculos.',
+        }, 
+        card5:{
+          title: 'Hombre Bala',
+          description: 'Dispara al hombre bala y consigue la estrella. Este proyecto simula la física ragdoll en un mundo 2D.',
+        },
+        card6:{
+          title: 'Sumtrain',
+          description: 'Realiza sumas para avanzar el tren. Si fallas un vagón desaparece. ',
+        },
+        card7:{
+          title: 'Total Tank',
+          description: 'Total Tank es un juego arcade inspirado en Battle City. Vence a tus enemigos antes de perder tu armadura.',
+        },
+        card8:{
+          title: 'West Saloon',
+          description: 'Derrota a los bandidos y salvar a los perros. Duck Hunt con estilo vaquero.',
+        },
+        card9:{
+          title: 'SAB "Mi Beca" ',
+          description: 'Desarrollo y mantenimiento del sistema "Mi beca" empleado por Facultad de Ciencias Exactas Químicas y Naturales de la Universidad Nacional de Misiones.',
         }
       },
       articles: {
@@ -73,6 +128,7 @@ const messages = {
       },
       interface: {
         download: "Descargar",
+        show: "Ver"
       }
     }
   }
