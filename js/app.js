@@ -9,7 +9,7 @@ const messages = {
           organization: 'Chatora Games',
         },
         card2:{
-          title: 'Professor of Computer Science',
+          title: 'University Professor of Computer Science',
           organization: 'National University of Misiones',
         },
         card3:{
@@ -95,7 +95,7 @@ const messages = {
         },
         card3:{
           title: 'Sunset Revenge',
-          description: 'Sunset Revenge es un Fangame de Sunset Riders. Integración de API Kongregate.s',
+          description: 'Sunset Revenge es un Fangame de Sunset Riders. Integración de API Kongregate.',
         },
         card4:{
           title: 'Rabbuble',
