@@ -55,6 +55,12 @@ const messages = {
           description: 'Development and maintenance of the system "Mi Beca" used by the Faculty of Chemical and Natural Sciences of the National University of Misiones.',
         }
       },
+      work: {
+        title: "Work Experience",
+        experience1:{
+          title:"a"
+        }
+      },
       articles: {
         in: "in",
         of: "of"
@@ -120,6 +126,12 @@ const messages = {
         card9:{
           title: 'SAB "Mi Beca" ',
           description: 'Desarrollo y mantenimiento del sistema "Mi beca" empleado por Facultad de Ciencias Exactas Químicas y Naturales de la Universidad Nacional de Misiones.',
+        }
+      },
+      work: {
+        title: "Experiencia laboral",
+        experience1:{
+          title:"a"
         }
       },
       articles: {
