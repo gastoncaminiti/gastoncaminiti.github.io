@@ -1,4 +1,20 @@
 .opacity-background {
         background: rgba(31, 30, 30, 0.85); 
 }
-    
+.tabs .col-auto {
+        background: #ffffff !important;    
+ }
+
+ .tabs {
+        background: #f7f7f7  !important;    
+ }
+
+.nav-pills .nav-link.active,
+.show>.nav-pills .nav-link{
+    background: #f7f7f7  !important;
+    text-decoration: underline wavy #17a2b8;
+}
+
+.nav-pills a:active, a:focus { 
+    outline: none; 
+}      

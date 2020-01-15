@@ -61,6 +61,18 @@ const messages = {
           title:"a"
         }
       },
+      conferences: {
+        title: "Conferences",
+        conference1:{
+          title:"a"
+        }
+      },
+      volunteer: {
+        title: "Volunteering",
+        volunteer1:{
+          title:"a"
+        }
+      },
       articles: {
         in: "in",
         of: "of"
@@ -131,6 +143,19 @@ const messages = {
       work: {
         title: "Experiencia laboral",
         experience1:{
+          title:"a"
+        }
+      
+      },
+      conferences: {
+        title: "Conferencias",
+        conference1:{
+          title:"a"
+        }
+      },
+      volunteer: {
+        title: "Voluntariado",
+        volunteer1:{
           title:"a"
         }
       },
