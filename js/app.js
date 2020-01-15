@@ -58,19 +58,75 @@ const messages = {
       work: {
         title: "Work Experience",
         experience1:{
-          title:"a"
+          title:"Full Stack Developer",
+          description: 'Development and maintenance of the system "Mi Beca" used by the Faculty of Chemical and Natural Sciences of the National University of Misiones.',
+          date: "Mar 2017 - Presente"
+        },
+        experience2:{
+          title:"Assistant Professor",
+          description: 'Professor in the "Project of the career University Technician in Information Technology". Class: Educational Technology. National University of Misiones',
+          date: "Abr 2019 - Jul. 2019"
+        },
+        experience3:{
+          title:"Full Stack Developer",
+          description: 'Web development in different projects using Laravel, AngularJS, CodeIgniter, Ruby on Rails and Bottle.py.',
+          date: "Jun 2015 - Ene 2016"
+        },
+        experience4:{
+          title:"IT Support Technician",
+          description: 'IT Support in Computer Unit of the Apostoles Module of the Faculty of Exact, Chemical and Natural Sciences.',
+          date: "Feb 2014 - Jun 2015"
+        },
+        experience5:{
+          title:"Technical Trainer",
+          description: 'Trainer in courses on HTML5, CSS3, PHP, design and web development.',
+          date: "Mar 2011 - Oct. 2014"
         }
       },
       conferences: {
         title: "Conferences",
-        conference1:{
-          title:"a"
+        experience1:{
+          title:"Video game development with Godot Engine",
+          date: "JOINEA 2019"
+        },
+        experience2:{
+          title:"An approach to the MDA framework as a tool for the design and analysis of educational video games",
+          date: "JOINEA 2018"
+        },
+        experience3:{
+          title:"2D Platform Game Development with Construct 2",
+          date: "UAE 2015"
+        },
+        experience4:{
+          title:"Windows 10 Development",
+          date: "JOINEA 2015"
+        },
+        experience5:{
+          title:"2D Platform Game Development with Construct 2",
+          date: "JOINEA 2015"
         }
       },
       volunteer: {
         title: "Volunteering",
-        volunteer1:{
-          title:"a"
+        experience1:{
+          title:"Member IEEE CIS Argentina Games Technical Committee",
+          description: 'GTC focuses on the professional, academic and scientific areas of video games with the aim of formalizing them and putting them on a par with other industries.',
+          date: "2019 - Present"
+        },
+        experience2:{
+          title:"Tutor",
+          description: 'Tutor in the "Module of Learning Strategies and Tutorial Accompaniment" in the virtual course modality of the FCEQyN Entrance Course  for IT careers. National University of Misiones',
+          date: "2018 - 2019"
+        },
+        experience3:{
+          title:"Microsoft Student Partner",
+          description: 'Work with new software technologies and learning projects for programmers and designers in Microsoft products.',
+          date: "2015 - 2017"
+        },
+        experience4:{
+          title:"Marketing Coordinator",
+          description: 'Web Development, Social Media and Marketing for "Jornada de Integración, Extensión y Actualización de estudiantes de informática" (JOINEA) ',
+          date: "2012 - 2013"
         }
       },
       articles: {
@@ -143,20 +199,75 @@ const messages = {
       work: {
         title: "Experiencia laboral",
         experience1:{
-          title:"a"
+          title:"Desarrollador web",
+          description: 'Desarrollo y mantenimiento del sistema "Mi beca" empleado por Facultad de Ciencias Exactas Químicas y Naturales de la Universidad Nacional de Misiones.',
+          date: "Mar 2017 - Presente"
+        },
+        experience2:{
+          title:"Profesor universitario asistente",
+          description: 'Profesor asistente en el "Proyecto de la Tecnicatura Universitaria en Tecnologías de la Información". Materia: Tecnología Educativa.',
+          date: "Abr 2019 - Jul. 2019"
+        },
+        experience3:{
+          title:"Desarrollador web",
+          description: 'Desarrollo en diferentes proyectos empleando tecnologías diversas: Laravel, AngularJS, CodeIgniter, Ruby on Rails, Bottle.py, entre otros.',
+          date: "Jun 2015 - Ene 2016"
+        },
+        experience4:{
+          title:"Técnico de mantenimiento",
+          description: 'Técnico de Mantenimiento en la Unidad Informática del Módulo Apóstoles perteneciente a la Facultad de Ciencias Exactas, Químicas y Naturales.',
+          date: "Feb 2014 - Jun 2015"
+        },
+        experience5:{
+          title:"Formador Técnico",
+          description: 'Capacitador en cursos de formación sobre HTML5, CSS3, PHP, diseño y desarrollo web.',
+          date: "Mar 2011 - Oct. 2014"
         }
-      
       },
       conferences: {
         title: "Conferencias",
-        conference1:{
-          title:"a"
+        experience1:{
+          title:"Desarrollo de Videojuegos con Godot Engine",
+          date: "JOINEA 2019"
+        },
+        experience2:{
+          title:"Una aproximación al framework MDA como herramienta de diseño y análisis de videojuegos educativos",
+          date: "JOINEA 2018"
+        },
+        experience3:{
+          title:"Desarrollo de videojuegos de plataformas 2D con Construct2",
+          date: "UAE 2015"
+        },
+        experience4:{
+          title:"Desarrollo en Windows 10",
+          date: "JOINEA 2015"
+        },
+        experience5:{
+          title:"Desarrollo de videojuegos de plataformas 2D con Construct",
+          date: "JOINEA 2015"
         }
       },
       volunteer: {
         title: "Voluntariado",
-        volunteer1:{
-          title:"a"
+        experience1:{
+          title:"Miembro IEEE CIS Argentina Games Technical Committee",
+          description: 'GTC se orienta a las áreas profesional, académica y científica de los videojuegos con el objetivo de formalizarlas y equipararlas a otras industrias. ',
+          date: "2019 - Present"
+        },
+        experience2:{
+          title:"Tutor",
+          description: 'Tutor en el "Módulo de Estrategias de Aprendizaje y Acompañamiento Tutorial" en la modalidad de cursado virtual del Cursillo de la FCEQyN para carreras de informática.',
+          date: "2018 - 2019"
+        },
+        experience3:{
+          title:"Microsoft Student Partner",
+          description: 'Trabajar con nuevas tecnologías en materia de software y promover proyectos de aprendizaje para programadores y diseñadores en los productos de Microsoft.',
+          date: "2015 - 2017"
+        },
+        experience4:{
+          title:"Coordinador de Marketing",
+          description: 'Desarrollo Web, Social Media y Marketing para la "Jornada de Integración, Extensión y Actualización de estudiantes de informática" (JOINEA)',
+          date: "2012 - 2013"
         }
       },
       articles: {
