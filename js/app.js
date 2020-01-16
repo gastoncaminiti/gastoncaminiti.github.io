@@ -5,7 +5,7 @@ const messages = {
       portfolio: 'Portfolio',
       header: {
         card1:{
-          title: 'Game Designer',
+          title: 'Co-Founder & Video Game Designer',
           organization: 'Chatora Games',
         },
         card2:{
@@ -146,7 +146,7 @@ const messages = {
       portfolio: 'Portfolio',
       header: {
         card1:{
-          title: 'Diseñador de Videojuegos',
+          title: 'Cofundador y Diseñador de Videojuegos',
           organization: 'Chatora Games',
         },
         card2:{
@@ -294,7 +294,12 @@ new Vue({
       message: 'Gastón Caminiti',
       langs: ['es', 'en'], 
       fcards: [false, false, false, false, false, false, false, false, false],
-      mainProps: { blank: true, blankColor: '#777', width: 75, height: 75, class: 'm1' }
+      isLoading: true
+    },
+    mounted () {
+      setTimeout(() => {
+        this.isLoading = false
+      }, 2000)
     },
     methods: {
       show_card: function(index){
