@@ -20,11 +20,11 @@ const messages = {
       portfolio: {
         card1:{
           title: 'Verdandi - Norse Legends',
-          description: 'Verdandi is an experimental 2D strategy video game, where we assume the role of a Valkyrie, who using the power of the Viking runes can manipulate the events of combat.',
+          description: 'Verdandi is a 2D strategy video game, where we assume the role of a Valkyrie, who using the power of the Viking runes can manipulate the events of combat.',
         },
         card2:{
           title: 'Zamna Atlante',
-          description: 'Open source project destinate to learn development for 2D platform games in Godot 3.',
+          description: 'Open source project. 2D platform game where we control the day and night.',
         },
         card3:{
           title: 'Sunset Revenge',
@@ -35,8 +35,8 @@ const messages = {
           description: 'Rabbuble is a 2D platform game, travel between bubbles and pick up the carrots but watch out for obstacles.',
         },
         card5:{
-          title: 'Bulletman',
-          description: 'Shoot bulletman and get the star. This project simulate ragdoll physics in 2D world.',
+          title: 'Galia Defenders',
+          description: 'Fights hand-to-hand against Romans. Defeat Caesar to win the level.',
         },
         card6:{
           title: 'Sumtrain',
@@ -161,11 +161,11 @@ const messages = {
       portfolio: {
         card1:{
           title: 'Verdandi - Leyendas Nordicas',
-          description: 'Verdandi es un videojuego experimental de estrategia 2D, donde asumimos el rol de una valquiria, que empleando el poder de las runas vikingas puede manipular los eventos del combate.',
+          description: 'Verdandi es un videojuego de estrategia 2D, donde asumimos el rol de una valquiria, que empleando el poder de las runas vikingas puede manipular los eventos del combate.',
         },
         card2:{
           title: 'Zamna Atlante',
-          description: 'Proyecto de código abierto destinado a aprender desarrollo de juegos de plataforma 2D en Godot 3.',
+          description: 'Proyecto de código abierto.Videojuego de plataforma 2D donde controlamos el día y la noche.',
         },
         card3:{
           title: 'Sunset Revenge',
@@ -176,8 +176,8 @@ const messages = {
           description: 'Rabbuble es un juego de plataformas en 2D, viaja entre burbujas y recoge las zanahorias pero ten cuidado con los obstáculos.',
         }, 
         card5:{
-          title: 'Hombre Bala',
-          description: 'Dispara al hombre bala y consigue la estrella. Este proyecto simula la física ragdoll en un mundo 2D.',
+          title: 'Defensores de Galia',
+          description: 'Combate cuerpo a cuerpo contra romanos. Derrota al Cesar para ganar el nivel.',
         },
         card6:{
           title: 'Sumtrain',
