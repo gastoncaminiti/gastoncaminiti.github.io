@@ -10,11 +10,11 @@
 	<!-- Meta Tag -->
 	<meta charset="utf-8">
 	<meta name="description" content="Professional in education and design with experience in software development and video games. Face-to-face and distance teacher of computing, programming and learning strategies. Researcher in didactics and serious video games.">
-	<meta name="keywords" content="Professor,Profesor,Game Designer,Diseñador, Portfolio, Portafolio">
+	<meta name="keywords" content="Professor,Profesor,Game Designer,Game Developer, Portfolio, Chatora Games">
 	<meta name="author" content="Gastón Caminiti">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<!-- Meta og -->
-	<meta property="og:title" content="Gastón Caminiti - Professor & Game Designer">
+	<meta property="og:title" content="Gastón Caminiti - Professor & Game Developer">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="https://gastoncaminiti.github.io/">
 	<meta property="og:image" content="https://gastoncaminiti.github.io/img/site/avatarog.png">
@@ -34,14 +34,14 @@
 			<b-row>
 				<b-col xl="6" offset-xl="3" lg="6" offset-lg="3" md="12" sm="12" cols="12">
 								<b-row align-v="center">
-									<b-col  xl="6" lg="6" md="12" sm="12" cols="12">
+									<b-col  xl="4" lg="4" md="12" sm="12" cols="12">
 										<b-img src="img/site/avatar.png" alt="avatar image" fluid ></b-img>
 									</b-col>
-									<b-col  xl="6" lg="6" md="12" sm="12" cols="12" class="text-center">
+									<b-col  xl="8" lg="8" md="12" sm="12" cols="12" class="text-center">
 										<h2 class="text-dark"><em>Gastón Caminiti</em></h2>
 										<h5 class="font-italic text-secondary">{{ $t("data.title") }}</h5>
 										<b-row  align-h="center">
-										<b-col  xl="6" lg="6" md="12" sm="12" cols="12">
+										<b-col  xl="8" lg="8" md="12" sm="12" cols="12">
 											<b-link href="https://www.linkedin.com/in/gastoncaminiti"  target="_blank"><b-img  src="img/site/in.png" alt="avatar image"  rounded width="50" height="50" ></b-img></b-link>
 											<b-link href="https://medium.com/@gastoncaminiti"  target="_blank"><b-img  src="img/site/md.png" alt="avatar image"  rounded width="50" height="50" ></b-img></b-link>
 											<b-link href="https://gastoncaminiti.itch.io/"  target="_blank"><b-img  src="img/site/it.png" alt="avatar image"  rounded width="50" height="50" ></b-img></b-link>
@@ -381,35 +381,43 @@
 									<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience1.title") }}</h5>
 									<h5 class="blockquote-footer">{{ $t("data.conferences.experience1.date") }}</h5>
 									</b-media>
+
+									<b-media tag="li" class="my-4">
+									<template v-slot:aside>
+										<b-img src="img/site/godot.png" width="64" alt="placeholder"></b-img>
+									</template>
+									<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience2.title") }}</h5>
+									<h5 class="blockquote-footer">{{ $t("data.conferences.experience2.date") }}</h5>
+									</b-media>
 								
 									<b-media tag="li" class="my-4">
 									<template v-slot:aside>
 										<b-img src="img/site/mda.png" width="64" alt="placeholder"></b-img>
 									</template>
-									<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience2.title") }}</h5>
-									<h5 class="blockquote-footer">{{ $t("data.conferences.experience2.date") }}</h5>
+									<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience3.title") }}</h5>
+									<h5 class="blockquote-footer">{{ $t("data.conferences.experience3.date") }}</h5>
 									</b-media>
 								
 									<b-media tag="li">
 									<template v-slot:aside>
 										<b-img src="img/site/construct.png" width="64" alt="placeholder"></b-img>
 									</template>
-									<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience3.title") }}</h5>
-									<h5 class="blockquote-footer">{{ $t("data.conferences.experience3.date") }}</h5>
+									<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience4.title") }}</h5>
+									<h5 class="blockquote-footer">{{ $t("data.conferences.experience4.date") }}</h5>
 									</b-media>
 									
 									<b-media tag="li" class="my-4">
 										<template v-slot:aside>
 										<b-img src="img/site/w10.png" width="64" alt="placeholder"></b-img>
 										</template>
-										<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience4.title") }}</h5>
-										<h5 class="blockquote-footer">{{ $t("data.conferences.experience4.date") }}</h5>
+										<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience5.title") }}</h5>
+										<h5 class="blockquote-footer">{{ $t("data.conferences.experience5.date") }}</h5>
 									</b-media>
 									<b-media tag="li" class="my-4">
 										<template v-slot:aside>
 										<b-img src="img/site/construct.png"  width="64" alt="placeholder"></b-img>
 										</template>
-										<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience5.title") }}</h5>
+										<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience6.title") }}</h5>
 										<h5 class="blockquote-footer">{{ $t("data.conferences.experience5.date") }}</h5>
 									</b-media>
 								</ul>
@@ -464,6 +472,84 @@
 										</p>
 									</b-media>
 								</ul>
+							</b-tab>
+							<!--VIDEO TAB-->
+							<b-tab>
+								<b-card-group deck>
+									<b-card>
+										<b-embed
+										type="iframe"
+										aspect="16by9"
+										src="https://www.youtube.com/embed/lgevlk0RhUY"
+										allowfullscreen
+									  ></b-embed>
+										<b-card-text class="font-italic">
+											{{ $t("data.video.experience1.title") }}
+										</b-card-text>
+									</b-card>
+									<b-card>
+										<b-embed
+										type="iframe"
+										aspect="16by9"
+										src="https://www.youtube.com/embed/T0erbxrHQdk"
+										allowfullscreen
+									  ></b-embed>
+										<b-card-text class="font-italic">
+											{{ $t("data.video.experience2.title") }}
+										</b-card-text>
+									</b-card>
+									<b-card>
+										<b-embed
+										type="iframe"
+										aspect="16by9"
+										src="https://www.youtube.com/embed/55JI39RriJE"
+										allowfullscreen
+									  ></b-embed>
+										<b-card-text class="font-italic">
+											{{ $t("data.video.experience3.title") }}
+										</b-card-text>
+									</b-card>
+								</b-card-group>
+								<hr>
+								<b-card-group deck>
+									<b-card>
+										<b-embed
+										type="iframe"
+										aspect="16by9"
+										src="https://www.youtube.com/embed/TyjVDv-VqGE"
+										allowfullscreen
+									  ></b-embed>
+										<b-card-text class="font-italic">
+											{{ $t("data.video.experience4.title") }}
+										</b-card-text>
+									</b-card>
+									<b-card>
+										<b-embed
+										type="iframe"
+										aspect="16by9"
+										src="https://www.youtube.com/embed/nUJAEF7BDnw"
+										allowfullscreen
+									  ></b-embed>
+										<b-card-text class="font-italic">
+											{{ $t("data.video.experience5.title") }}
+										</b-card-text>
+									</b-card>
+									<b-card>
+										<b-embed
+										type="iframe"
+										aspect="16by9"
+										src="https://www.youtube.com/embed/IA9vlAKuLXk"
+										allowfullscreen
+									  ></b-embed>
+										<b-card-text class="font-italic">
+											{{ $t("data.video.experience6.title") }}
+										</b-card-text>
+									</b-card>
+								</b-card-group>
+								<template v-slot:title>
+									<h4 class="text-dark font-weight-light text-left"> <b-icon-play variant="secondary"></b-icon-play> {{ $t("data.video.title") }}</h4>
+								</template>
+							
 							</b-tab>
 						</b-tabs>
 					</b-card>

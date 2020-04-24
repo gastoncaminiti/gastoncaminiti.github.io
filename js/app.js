@@ -1,11 +1,11 @@
 const messages = {
   en: {
     data: {
-      title: 'Professor & Game Designer',
+      title: 'Professor & Game developer',
       portfolio: 'Portfolio',
       header: {
         card1:{
-          title: 'Co-Founder & Video Game Designer',
+          title: 'Co-Founder & Video Game Developer',
           organization: 'Chatora Games',
         },
         card2:{
@@ -86,22 +86,26 @@ const messages = {
       conferences: {
         title: "Conferences",
         experience1:{
+          title:"Webinar Video game development with Godot Engine",
+          date: "IEEE GTC 2020"
+        },
+        experience2:{
           title:"Video game development with Godot Engine",
           date: "JOINEA 2019"
         },
-        experience2:{
+        experience3:{
           title:"An approach to the MDA framework as a tool for the design and analysis of educational video games",
           date: "JOINEA 2018"
         },
-        experience3:{
+        experience4:{
           title:"2D Platform Game Development with Construct 2",
           date: "UAE 2015"
         },
-        experience4:{
+        experience5:{
           title:"Windows 10 Development",
           date: "JOINEA 2015"
         },
-        experience5:{
+        experience6:{
           title:"2D Platform Game Development with Construct 2",
           date: "JOINEA 2015"
         }
@@ -129,6 +133,30 @@ const messages = {
           date: "2012 - 2013"
         }
       },
+      video: {
+        title: "Videos",
+        experience1:{
+          title:"2° Webinar - Godot Engine GTC IEEE",
+        },
+        experience2:{
+          title:"1° Webinar - Godot Engine GTC IEEE",
+        },
+        experience3:{
+          title:"Learning Strategies 'Summary' - UNaM",
+        },
+        experience4:{
+          title:"Learning Strategies 'Read' - UNaM",
+        },
+        experience5:{
+          title:"Learning Strategies 'Exam' - UNaM",
+        },
+        experience6:{
+          title:"Learning Strategies 'Study' - UNaM",
+        },
+        experience7:{
+          title:"Learning Strategies 'Careers' - UNaM",
+        },
+      },
       articles: {
         in: "in",
         of: "of"
@@ -142,11 +170,11 @@ const messages = {
   },
   es: {
     data: {
-      title: 'Profesor y diseñador de videojuegos',
+      title: 'Profesor y desarrollador de videojuegos',
       portfolio: 'Portfolio',
       header: {
         card1:{
-          title: 'Cofundador y Diseñador de Videojuegos',
+          title: 'Cofundador y Desarrollador de Videojuegos',
           organization: 'Chatora Games',
         },
         card2:{
@@ -227,22 +255,26 @@ const messages = {
       conferences: {
         title: "Conferencias",
         experience1:{
+          title:"Webinar Desarrollo de Videojuegos con Godot Engine",
+          date: "IEEE GTC 2020"
+        },
+        experience2:{
           title:"Desarrollo de Videojuegos con Godot Engine",
           date: "JOINEA 2019"
         },
-        experience2:{
+        experience3:{
           title:"Una aproximación al framework MDA como herramienta de diseño y análisis de videojuegos educativos",
           date: "JOINEA 2018"
         },
-        experience3:{
+        experience4:{
           title:"Desarrollo de videojuegos de plataformas 2D con Construct2",
           date: "UAE 2015"
         },
-        experience4:{
+        experience5:{
           title:"Desarrollo en Windows 10",
           date: "JOINEA 2015"
         },
-        experience5:{
+        experience6:{
           title:"Desarrollo de videojuegos de plataformas 2D con Construct",
           date: "JOINEA 2015"
         }
@@ -269,6 +301,30 @@ const messages = {
           description: 'Desarrollo Web, Social Media y Marketing para la "Jornada de Integración, Extensión y Actualización de estudiantes de informática" (JOINEA)',
           date: "2012 - 2013"
         }
+      },
+      video: {
+        title: "Videos",
+        experience1:{
+          title:"2° Webinar - Godot Engine GTC IEEE",
+        },
+        experience2:{
+          title:"1° Webinar - Godot Engine GTC IEEE",
+        },
+        experience3:{
+          title:"Estrategias de Aprendizaje 'Resumen' - UNaM",
+        },
+        experience4:{
+          title:"Estrategias de Aprendizaje 'Lectura' - UNaM",
+        },
+        experience5:{
+          title:"Estrategias de Aprendizaje 'Examen' - UNaM",
+        },
+        experience6:{
+          title:"Estrategias de Aprendizaje 'Estudio' - UNaM",
+        },
+        experience7:{
+          title:"Estrategias de Aprendizaje 'Carreras' - UNaM",
+        },
       },
       articles: {
         in: "en",
