@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Gastón Caminiti | Professor & Game Designer</title>
+	<title>Gastón Caminiti | Professor & Game Developer</title>
 	<link rel="icon" type="image/png" href="icon.png">
 	<!-- Add this to <head> -->
 	<link type="text/css" rel="stylesheet" href="css/min/bootstrap.min.css">
@@ -374,7 +374,14 @@
 									<h4 class="text-dark font-weight-light text-left"> <b-icon-mic variant="secondary"></b-icon-mic> {{ $t("data.conferences.title") }}</h4>
 								</template>
 								<ul class="list-unstyled text-left">
-									<b-media tag="li">
+									<b-media tag="li" class="my-4">
+										<template v-slot:aside>
+											<b-img src="img/site/fcyt.png" width="64" alt="placeholder"></b-img>
+										</template>
+										<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience7.title") }}</h5>
+										<h5 class="blockquote-footer">{{ $t("data.conferences.experience7.date") }}</h5>
+									</b-media>
+									<b-media tag="li" class="my-4">
 									<template v-slot:aside>
 										<b-img src="img/site/godot.png" width="64" alt="placeholder"></b-img>
 									</template>
@@ -476,28 +483,42 @@
 							<!--VIDEO TAB-->
 							<b-tab>
 								<b-card-group deck>
-									<b-card>
-										<b-embed
-										type="iframe"
-										aspect="16by9"
-										src="https://www.youtube.com/embed/lgevlk0RhUY"
-										allowfullscreen
-									  ></b-embed>
-										<b-card-text class="font-italic">
-											{{ $t("data.video.experience1.title") }}
-										</b-card-text>
-									</b-card>
-									<b-card>
-										<b-embed
-										type="iframe"
-										aspect="16by9"
-										src="https://www.youtube.com/embed/T0erbxrHQdk"
-										allowfullscreen
-									  ></b-embed>
-										<b-card-text class="font-italic">
-											{{ $t("data.video.experience2.title") }}
-										</b-card-text>
-									</b-card>
+								<b-card>
+									<b-embed
+									type="iframe"
+									aspect="16by9"
+									src="https://www.youtube.com/embed/9BvrOxTXyh0"
+									allowfullscreen
+								  ></b-embed>
+									<b-card-text class="font-italic">
+										{{ $t("data.video.experience7.title") }}
+									</b-card-text>
+								</b-card>
+								<b-card>
+									<b-embed
+									type="iframe"
+									aspect="16by9"
+									src="https://www.youtube.com/embed/lgevlk0RhUY"
+									allowfullscreen
+								  ></b-embed>
+									<b-card-text class="font-italic">
+										{{ $t("data.video.experience1.title") }}
+									</b-card-text>
+								</b-card>
+								<b-card>
+									<b-embed
+									type="iframe"
+									aspect="16by9"
+									src="https://www.youtube.com/embed/T0erbxrHQdk"
+									allowfullscreen
+								  ></b-embed>
+									<b-card-text class="font-italic">
+										{{ $t("data.video.experience2.title") }}
+									</b-card-text>
+								</b-card>
+								</b-card-group>
+								<hr>
+								<b-card-group deck>
 									<b-card>
 										<b-embed
 										type="iframe"
@@ -509,9 +530,6 @@
 											{{ $t("data.video.experience3.title") }}
 										</b-card-text>
 									</b-card>
-								</b-card-group>
-								<hr>
-								<b-card-group deck>
 									<b-card>
 										<b-embed
 										type="iframe"
@@ -534,6 +552,10 @@
 											{{ $t("data.video.experience5.title") }}
 										</b-card-text>
 									</b-card>
+								</b-card-group>
+								<hr>
+								<!--
+								<b-card-group deck>
 									<b-card>
 										<b-embed
 										type="iframe"
@@ -546,10 +568,10 @@
 										</b-card-text>
 									</b-card>
 								</b-card-group>
+								-->
 								<template v-slot:title>
 									<h4 class="text-dark font-weight-light text-left"> <b-icon-play variant="secondary"></b-icon-play> {{ $t("data.video.title") }}</h4>
 								</template>
-							
 							</b-tab>
 						</b-tabs>
 					</b-card>

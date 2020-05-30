@@ -60,7 +60,7 @@ const messages = {
         experience1:{
           title:"Full Stack Developer",
           description: 'Development and maintenance of the system "Mi Beca" used by the Faculty of Chemical and Natural Sciences of the National University of Misiones.',
-          date: "Mar 2017 - Presente"
+          date: "Mar 2017 - 2020"
         },
         experience2:{
           title:"Assistant Professor",
@@ -108,6 +108,10 @@ const messages = {
         experience6:{
           title:"2D Platform Game Development with Construct 2",
           date: "JOINEA 2015"
+        },
+        experience7:{
+          title:"Video Game Development: Fundamentals and Tools",
+          date: "FCyT 2020"
         }
       },
       volunteer: {
@@ -120,7 +124,7 @@ const messages = {
         experience2:{
           title:"Tutor",
           description: 'Tutor in the "Module of Learning Strategies and Tutorial Accompaniment" in the virtual course modality of the FCEQyN Entrance Course  for IT careers. National University of Misiones',
-          date: "2018 - 2019"
+          date: "2018 - 2020"
         },
         experience3:{
           title:"Microsoft Student Partner",
@@ -154,7 +158,7 @@ const messages = {
           title:"Learning Strategies 'Study' - UNaM",
         },
         experience7:{
-          title:"Learning Strategies 'Careers' - UNaM",
+          title:"Video Game Development: Fundamentals and Tools - FCyT",
         },
       },
       articles: {
@@ -229,7 +233,7 @@ const messages = {
         experience1:{
           title:"Desarrollador web",
           description: 'Desarrollo y mantenimiento del sistema "Mi beca" empleado por Facultad de Ciencias Exactas Químicas y Naturales de la Universidad Nacional de Misiones.',
-          date: "Mar 2017 - Presente"
+          date: "Mar 2017 - 2020"
         },
         experience2:{
           title:"Profesor universitario asistente",
@@ -277,6 +281,10 @@ const messages = {
         experience6:{
           title:"Desarrollo de videojuegos de plataformas 2D con Construct",
           date: "JOINEA 2015"
+        },
+        experience7:{
+          title:"Desarrollo de Videojuegos: Fundamentos y Herramientas",
+          date: "FCyT 2020"
         }
       },
       volunteer: {
@@ -289,7 +297,7 @@ const messages = {
         experience2:{
           title:"Tutor",
           description: 'Tutor en el "Módulo de Estrategias de Aprendizaje y Acompañamiento Tutorial" en la modalidad de cursado virtual del Cursillo de la FCEQyN para carreras de informática.',
-          date: "2018 - 2019"
+          date: "2018 - 2020"
         },
         experience3:{
           title:"Microsoft Student Partner",
@@ -323,7 +331,7 @@ const messages = {
           title:"Estrategias de Aprendizaje 'Estudio' - UNaM",
         },
         experience7:{
-          title:"Estrategias de Aprendizaje 'Carreras' - UNaM",
+          title:"Desarrollo de Videojuegos: Fundamentos y Herramientas' - FCyT",
         },
       },
       articles: {
