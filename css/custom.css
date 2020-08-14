@@ -17,4 +17,12 @@
 
 .nav-pills a:active, a:focus { 
     outline: none; 
-}      
+}
+
+.banner-color{
+    background: #b6c2d0 !important;
+}
+
+.title-blue{
+    color: #00387a;
+}
