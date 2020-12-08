@@ -81,7 +81,17 @@ const messages = {
           title:"Technical Trainer",
           description: 'Trainer in courses on HTML5, CSS3, PHP, design and web development.',
           date: "Mar 2011 - Oct. 2014"
-        }
+        },
+        experience6:{
+          title:"Professor in JavaScript",
+          description: 'Teacher in virtual mode for CoderHouse. JavaScript Course.',
+          date: "Sept. 2020"
+        },
+        experience7:{
+          title:"Professor in videogame development",
+          description: 'Professor of the virtual course "2D platformer video game development with Godot Engine".',
+          date: "Ago. 2020"
+        },
       },
       conferences: {
         title: "Conferences",
@@ -112,6 +122,14 @@ const messages = {
         experience7:{
           title:"Video Game Development: Fundamentals and Tools",
           date: "FCyT 2020"
+        },
+        experience8:{
+          title:"Isometric video game development with godot engine",
+          date: "TRIC IX"
+        },
+        experience9:{
+          title:"VGG. Godot Game Engine",
+          date: "IEEE ARGENCON 2020"
         }
       },
       volunteer: {
@@ -159,6 +177,25 @@ const messages = {
         },
         experience7:{
           title:"Video Game Development: Fundamentals and Tools - FCyT",
+        },
+      },
+      publications: {
+        title: "Publications",
+        experience1:{
+          title:"From mechanics to code: Video Game Engines and Godot Engine",
+          publisher: "Ludorama"
+        },
+        experience2:{
+          title:"Godot Engine Series",
+          publisher: "GTC IEEE"
+        },
+        experience3:{
+          title:"Study of the impact of the immediate implementation of information technology in education and differents repercussions in the conversion of the face-to-face teaching activity to the distance format in times of preventive and compulsory social isolation in the Argentine Northeast",
+          publisher: "TE&ET"
+        },
+        experience4:{
+          title:"Reference framework for development and employment video games in learning process linked to integers, sum and product",
+          publisher: "Ludology"
         },
       },
       articles: {
@@ -254,7 +291,17 @@ const messages = {
           title:"Formador Técnico",
           description: 'Capacitador en cursos de formación sobre HTML5, CSS3, PHP, diseño y desarrollo web.',
           date: "Mar 2011 - Oct. 2014"
-        }
+        },
+        experience6:{
+          title:"Profesor en JavaScript",
+          description: 'Profesor en modalidad virtual para CoderHouse. Curso JavaScript.',
+          date: "Sept. 2020"
+        },
+        experience7:{
+          title:"Profesor en desarrollo de videojuegos",
+          description: 'Profesor del curso virtual Desarrollo de videojuegos de plataforma 2D con Godot Engine.',
+          date: "Ago. 2020"
+        },
       },
       conferences: {
         title: "Conferencias",
@@ -285,6 +332,14 @@ const messages = {
         experience7:{
           title:"Desarrollo de Videojuegos: Fundamentos y Herramientas",
           date: "FCyT 2020"
+        },
+        experience8:{
+          title:"Desarrollo de videojuegos isométricos con godot engine",
+          date: "TRIC IX"
+        },
+        experience9:{
+          title:"VGG. Godot Game Engine",
+          date: "IEEE ARGENCON 2020"
         }
       },
       volunteer: {
@@ -334,6 +389,25 @@ const messages = {
           title:"Desarrollo de Videojuegos: Fundamentos y Herramientas' - FCyT",
         },
       },
+      publications: {
+        title: "Publicaciones",
+        experience1:{
+          title:"De la mecánica al código: Motores de Videojuegos y Godot Engine",
+          publisher: "Ludorama"
+        },
+        experience2:{
+          title:"Godot Engine Series",
+          publisher: "GTC IEEE"
+        },
+        experience3:{
+          title:"Estudio del impacto de la implementación inmediata y obligatoria de la tecnología informática en la educación y sus diferentes repercusiones en la conversión de la actividad docente presencial al formato a distancia en tiempos de aislamiento social preventivo y obligatorio en el Noreste Argentino",
+          publisher: "TE&ET"
+        },
+        experience4:{
+          title:"Marco de referencia para el desarrollo y empleo de videojuegos en los procesos de aprendizaje vinculados a números enteros, suma y producto",
+          publisher: "Ludology"
+        },
+      },
       articles: {
         in: "en",
         of: "de"
@@ -361,9 +435,9 @@ new Vue({
       isLoading: true
     },
     mounted () {
-      setTimeout(() => {
+      window.addEventListener('load', () => {
         this.isLoading = false
-      }, 2000)
+      })
     },
     methods: {
       show_card: function(index){

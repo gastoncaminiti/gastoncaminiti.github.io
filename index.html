@@ -314,6 +314,30 @@
 								</template>
 								<ul class="list-unstyled text-left">
 									<b-media tag="li">
+										<template v-slot:aside>
+											<b-img src="img/site/coderhouse.png" width="64" alt="placeholder"></b-img>
+										</template>
+										<h5 class="mt-0 mb-1">{{ $t("data.work.experience6.title") }}</h5>
+										<h5 class="blockquote-footer">{{ $t("data.work.experience6.date") }}</h5>
+										<p class="mb-0">
+											{{ $t("data.work.experience6.description") }}
+										</p>
+										<br>
+									</b-media>
+
+									<b-media tag="li">
+										<template v-slot:aside>
+											<b-img src="img/site/fcyt.png" width="64" alt="placeholder"></b-img>
+										</template>
+										<h5 class="mt-0 mb-1">{{ $t("data.work.experience7.title") }}</h5>
+										<h5 class="blockquote-footer">{{ $t("data.work.experience7.date") }}</h5>
+										<p class="mb-0">
+											{{ $t("data.work.experience7.description") }}
+										</p>
+										<br>
+									</b-media>
+
+									<b-media tag="li">
 									<template v-slot:aside>
 										<b-img src="img/site/mb.png" width="64" alt="placeholder"></b-img>
 									</template>
@@ -374,6 +398,20 @@
 									<h4 class="text-dark font-weight-light text-left"> <b-icon-mic variant="secondary"></b-icon-mic> {{ $t("data.conferences.title") }}</h4>
 								</template>
 								<ul class="list-unstyled text-left">
+									<b-media tag="li" class="my-4">
+										<template v-slot:aside>
+											<b-img src="img/site/ieee.png" width="64" alt="placeholder"></b-img>
+										</template>
+										<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience9.title") }}</h5>
+										<h5 class="blockquote-footer">{{ $t("data.conferences.experience9.date") }}</h5>
+									</b-media>
+									<b-media tag="li" class="my-4">
+										<template v-slot:aside>
+											<b-img src="img/site/gtc.png" width="64" alt="placeholder"></b-img>
+										</template>
+										<h5 class="mt-0 mb-1">{{ $t("data.conferences.experience8.title") }}</h5>
+										<h5 class="blockquote-footer">{{ $t("data.conferences.experience8.date") }}</h5>
+									</b-media>
 									<b-media tag="li" class="my-4">
 										<template v-slot:aside>
 											<b-img src="img/site/fcyt.png" width="64" alt="placeholder"></b-img>
@@ -554,24 +592,45 @@
 									</b-card>
 								</b-card-group>
 								<hr>
-								<!--
-								<b-card-group deck>
-									<b-card>
-										<b-embed
-										type="iframe"
-										aspect="16by9"
-										src="https://www.youtube.com/embed/IA9vlAKuLXk"
-										allowfullscreen
-									  ></b-embed>
-										<b-card-text class="font-italic">
-											{{ $t("data.video.experience6.title") }}
-										</b-card-text>
-									</b-card>
-								</b-card-group>
-								-->
 								<template v-slot:title>
 									<h4 class="text-dark font-weight-light text-left"> <b-icon-play variant="secondary"></b-icon-play> {{ $t("data.video.title") }}</h4>
 								</template>
+							</b-tab>
+							<!--PUBLICATIONS TAB-->
+							<b-tab active>
+								<template v-slot:title>
+									<h4 class="text-dark font-weight-light text-left"> <b-icon-book variant="secondary"></b-icon-book> {{ $t("data.publications.title") }}</h4>
+								</template>
+								<ul class="list-unstyled text-left">
+									<b-media tag="li">
+									<template v-slot:aside>
+										<b-img src="img/site/ludorama.png" width="64" alt="placeholder"></b-img>
+									</template>
+									<h5 class="mt-0 mb-1">{{ $t("data.publications.experience1.title") }}</h5>
+									<h5 class="blockquote-footer">{{ $t("data.publications.experience1.publisher")}}</h5>
+									</b-media>
+									<b-media tag="li" class="my-4">
+									<template v-slot:aside>
+										<b-img src="img/site/gtc.png" width="64" alt="placeholder"></b-img>
+									</template>
+									<h5 class="mt-0 mb-1">{{ $t("data.publications.experience2.title") }}</h5>
+									<h5 class="blockquote-footer">{{ $t("data.publications.experience2.publisher")}}</h5>
+									</b-media>
+									<b-media tag="li">
+									<template v-slot:aside>
+										<b-img src="img/site/teiet.png" width="64" alt="placeholder"></b-img>
+									</template>
+									<h5 class="mt-0 mb-1">{{ $t("data.publications.experience3.title") }}</h5>
+									<h5 class="blockquote-footer">{{ $t("data.publications.experience3.publisher")}}</h5>
+									</b-media>
+									<b-media tag="li" class="my-4">
+										<template v-slot:aside>
+										<b-img src="img/site/ludology.png" width="64" alt="placeholder"></b-img>
+										</template>
+										<h5 class="mt-0 mb-1">{{ $t("data.publications.experience4.title") }}</h5>
+										<h5 class="blockquote-footer">{{ $t("data.publications.experience4.publisher")}}</h5>
+									</b-media>
+								</ul>
 							</b-tab>
 						</b-tabs>
 					</b-card>
